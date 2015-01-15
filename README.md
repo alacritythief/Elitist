@@ -12,6 +12,7 @@ Setup instructions:
 * Clone this repo and go into its folder, `rm -rf .git && git init` to start a fresh project.
 * `mkvirtualenv elitist` to create your initial Python environment
 * `npm run setup` will set up everything for you, including the superuser and basic pages
+* `grunt` will concatenate .styl and .js files from `client/src` into `client/dist`, and watch for any changes.
 * `npm run server` runs the server
 * Go to [localhost:8000](http://localhost:8000/) in your browser
 * visit [localhost:8000/admin](http://localhost:8000/admin) to play around in the admin interface.
