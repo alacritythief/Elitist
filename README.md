@@ -8,7 +8,7 @@ Elitist is a space pilot's best friend.
 Setup instructions:
 ------------------------
 
-* Make sure Python and NPM are installed.
+* Make sure Python, Virtualenv, Virtualenvwrapper, and NPM are installed.
 * Clone this repo and go into its folder, `rm -rf .git && git init` to start a fresh project.
 * `mkvirtualenv elitist` to create your initial Python environment
 * `npm run setup` will set up everything for you, including the superuser and basic pages
