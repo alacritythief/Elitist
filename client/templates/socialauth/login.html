@@ -1,0 +1,13 @@
+<h1>Login via Social media:</h1>
+
+{% if user and not user.is_anonymous %}
+  {% if user.is_superuser %}
+    <p>Hello, Admin!<p>
+  {% else %}
+    <p>Hello, {{ user.get_full_name }}!</p>
+  {% endif %}
+  <a href="/logout">Logout</a>
+{% else %}
+  <p>You are not logged in!</p>
+  <a href="{% url 'social:begin' 'facebook' %}?next={{ request.path }}">Login with Facebook</a>
+{% endif %}

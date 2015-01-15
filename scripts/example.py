@@ -1,0 +1,12 @@
+import os
+os.system("echo")
+os.system("echo 'Loading Example Data...'")
+os.system("echo '======================='")
+os.system("echo")
+os.system("python server/manage.py migrate")
+os.system("python server/manage.py loaddata server/fixtures/example_data.json")
+os.system("echo")
+os.system("echo 'Example fixtures loaded.'")
+os.system("echo")
+os.system("echo 'To run the server, type: npm run server'")
+os.system("echo")

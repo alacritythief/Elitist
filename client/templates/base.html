@@ -1,0 +1,14 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width">
+  <title>Elitist</title>
+  <link rel="stylesheet" href="{% static "dist/app.css" %}">
+</head>
+<body>
+  <div id="app">{% block content %}{% endblock %}</div>
+  <script src="{% static "dist/lib.js" %}"></script>
+  <script src="{% static "dist/app.js" %}"></script>
+</body>
+</html>
