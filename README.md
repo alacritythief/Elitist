@@ -20,7 +20,7 @@ Setup instructions:
 Special things that make your life easier:
 ------------------------------------------
 
-* `npm run reset-db` clears the dev database, and runs setup for you.
+* `npm run reset-db` clears the local dev database, and runs setup for you.
 * `npm run debug` runs the server with Werkzeug debugger, enabling use of Python commands in the error pages.
 * `npm run shell` runs an IPython shell and automagically loads all your models for debugging. No need to import all the things manually!
 * Add `from IPython.core.debugger import Tracer` at the top of any `.py` file, and add `Tracer()()` to debug from a breakpoint in your code.
