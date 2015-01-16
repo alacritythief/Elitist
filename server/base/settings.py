@@ -146,7 +146,7 @@ import sys
 if 'test' in sys.argv:
     DATABASES['default'] = {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'test_elitist.db'
+        'NAME': os.path.join(BASE_DIR, 'dev_elitist.db')
     }
 
 # Internationalization
